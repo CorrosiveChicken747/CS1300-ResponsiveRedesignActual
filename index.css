@@ -1,0 +1,59 @@
+body {
+    background-image: "hires_earth_bg.jpg";
+}
+
+.desktop {
+    display: visible;
+}
+
+.mobile {
+    display: none;
+}
+
+div {
+    border: 3px dashed red;
+}
+
+@media (max-width: 600px) {
+    .desktop{
+        display: none;
+    }
+    .mobile {
+        display: visible;
+    }
+    #everything-container {
+        background-color: blanchedalmond;
+    }
+}
+
+#everything-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./hires_earth_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.header-button {
+    justify-self: flex-end;
+}
+
+#header-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.8);
+    width: 100%;
+    height: 8vh;
+}
+
+#hamburger {
+    max-width: 10vw;
+}
+
+#bh-text {
+
+}
