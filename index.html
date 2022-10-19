@@ -5,20 +5,117 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Berkshire Hathaway Responsive Redesign">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 </head>
     <body>
-        <div id="everything-container">
+        <div class="flex-col">
             <div id="header-bar">
                 <img class="mobile" id="hamburger" src="hamburger_icon.png">
                 <h1 id="bh-text">Berkshire Hathaway, Inc.</h1>
-                <button type="button" class="btn btn-primary desktop header-button">About Us</button>
-                <button type="button" class="btn btn-primary desktop header-button">Contact</button>
+                <div id="buttons-div">
+                    <button type="button" class="btn btn-primary desktop header-button">About Us</button>
+                    <button type="button" class="btn btn-primary desktop header-button">Contact</button>
+                </div>
             </div>
-            <div id="background-div">
-                <div id="links">
-
+            <div id="mission-statement desktop">
+                <div class="vspace desktop"></div>
+                <div class="desktop" id="quote-bg">
+                    <h2 class="centered-text desktop" id="mission-text">to deliver the right parts exactly on time, exceed our internal and external customer requirements through continuous improvement, and provide a place for hard-working, dedicated, knowledgeable and ethical people who believe in the company</h2>
+                </div>
+            </div>
+            <div class="vspace desktop"></div>
+            <div class="vspace desktop"></div>
+            <div class="buttons-mobile btn-group mobile" role="group">
+                    <button type="button" class="btn btn-primary sel-but">Communications</button>
+                    <button type="button" class="btn btn-primary sel-but">Shareholder Information</button>
+                    <button type="button" class="btn btn-primary sel-but">Merchandise</button>
+            </div>
+            <div id="links">
+                <div class="flex-row table-row">
+                    <div class="flex-col table-col">
+                        <h4>Communications</h4>
+                        <ul>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/message.html">A Message from Warren E. Buffett</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/wesco/WescoHome.html">Charlie Munger's Letters to Wesco Shareholders</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/news/2022news.html">News Releases from Berkshire Hathaway and from Warren Buffett</a>
+                                <p class="date-under-link">Last Updated Oct 14, 2022</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/SpecialLetters/WEBCTMLtr.html">Special Letters from Warren & Charlie RE:Past, Present and Future</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/letters/letters.html">Warren Buffett's Letters to Berkshire Shareholders</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/activisionltr.pdf">Facts Regarding Berkshire's 2021 Investments in Activision Common Stock</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vline desktop"></div>
+                    <div class="flex-col table-col">
+                        <div class="hline mobile"></div>
+                        <h4>Shareholder Information</h4>
+                        <ul>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/reports.html">Annual & Interim Reports</a>
+                                <p class="date-under-link">Last Updated Aug 6, 2022</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/sharehold.html">Annual Meeting Information</a>
+                                <p class="date-under-link">Last Updated Mar 22, 2022</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="http://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&match=&CIK=&filenum=&State=&Country=&SIC=&owner=exclude&Find=Find+Companies&action=getcompany">Link to SEC Filings</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/BHE2021InvestPresent.pdf">Berkshire Hathaway Energy - 2021 Investor Presentation</a>
+                                <p class="date-under-link">Last Updated Aug 6, 2022</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/govern/govern.html">Corporate Governance</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/brkshareholderinfo/brkshareholderinfo.html">Common Stock Information</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="vline desktop"></div>
+                    <div class="flex-col table-col">
+                        <div class="hline mobile"></div>
+                        <h4>Merchandise & Other</h4>
+                        <ul>
+                            <li>
+                                <a class="main-link" href="https://www.ebay.com/itm/185106486239">Celebrating 50 Years of a Profitable Partnership - Commemorative Book</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="http://www.berkshirewear.com/">Berkshire Activewear</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/sustainability/sustainability.html">Sustainability</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                            <li>
+                                <a class="main-link" href="https://www.berkshirehathaway.com/donate/webdonat.html">Information Regarding Warren E. Buffett's Annual Contributions to Five Foundations</a>
+                                <p class="date-under-link">Last Updated Jan 1, 0000</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
